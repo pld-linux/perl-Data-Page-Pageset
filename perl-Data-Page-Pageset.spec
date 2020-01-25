@@ -4,7 +4,6 @@
 #
 %define		pdir	Data
 %define		pnam	Page-Pageset
-%include	/usr/lib/rpm/macros.perl
 Summary:	Data::Page::Pageset - change long page list to be shorter and well navigate
 Name:		perl-Data-Page-Pageset
 Version:	1.02

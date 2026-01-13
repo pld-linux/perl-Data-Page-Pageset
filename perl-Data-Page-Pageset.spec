@@ -7,7 +7,7 @@
 Summary:	Data::Page::Pageset - change long page list to be shorter and well navigate
 Name:		perl-Data-Page-Pageset
 Version:	1.02
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz

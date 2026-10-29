@@ -7,16 +7,22 @@
 Summary:	Data::Page::Pageset - change long page list to be shorter and well navigate
 Name:		perl-Data-Page-Pageset
 Version:	1.02
-Release:	2
+Release:	3
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	859bb3abdfa710ef38b1140274eae051
-URL:		http://search.cpan.org/dist/Data-Page-Pageset/
-BuildRequires:	perl-Data-Page
+URL:		https://metacpan.org/dist/Data-Page-Pageset
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Class-Accessor
+BuildRequires:	perl-Data-Page >= 2
+BuildRequires:	perl-Test-Exception
+%endif
+# Pageset never loads Data::Page itself, it takes Data::Page objects
+Requires:	perl-Data-Page >= 2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
